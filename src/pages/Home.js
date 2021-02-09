@@ -17,6 +17,10 @@ import Contact from "../components/Contact";
 import AboutCard from "../components/AboutUsInfoCard";
 import Media from "react-media";
 import ArtistPortrait from "../components/ArtistPortait";
+import NarsiePic from '../assets/images/narsiepic.jpeg';
+import Shadow from '../assets/images/shadow.jpg';
+import Tape from '../assets/images/tape.jpg';
+import GuitarGuy from '../assets/images/guitar-guy.jpg';
 
 
 const Home = props => {
@@ -50,27 +54,7 @@ const Home = props => {
       >
         <Services  />
       </div>
-      {/* <div
-        style={{
-          display: "flex",
-          flexDirection: "column"
-        }}
-      >
-        <h1
-          style={{
-            position: "absolute",
-            left: 0,
-            right: 0,
-            margin: "2rem auto 0rem auto",
-            color: "white"
-          }}
-        >
-          Previous Work
-        </h1>
-        <div id="discog" style={styles.prevDiv}>
-          <MediaCard image={Sing} />
-        </div>
-      </div> */}
+    
       <h1 id="discog" style={{
         position: 'relative',
       top:'5rem', color:'#cfcfcf'}}>Previous Work</h1>
@@ -85,16 +69,16 @@ const Home = props => {
      
  
         <ArtistPortrait
-        portraitImage = {Drum}
+        portraitImage = {NarsiePic}
         />
            <ArtistPortrait
-        portraitImage = {Drum}
+        portraitImage = {Tape}
         />
            <ArtistPortrait
-        portraitImage = {Drum}
+        portraitImage = {GuitarGuy}
         />
            <ArtistPortrait
-        portraitImage = {Drum}
+        portraitImage = {Shadow}
         />
         
       </div>
