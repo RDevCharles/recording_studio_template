@@ -26,6 +26,62 @@
 
 }
 
+.playButton {
+  width:4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: black;
+  transition: ease-in 500ms;
+  border-width: 0;
+  border-color: black;
+  position: relative;
+  left:12rem;
+  bottom:3rem;
+  background-image: url('https://img.icons8.com/ios-filled/50/191919/play--v1.png');
+  background-position: center;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  outline: none !important;
+ 
+
+}
+
+.playButtonPlaying {
+  width:4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: black;
+  transition: ease-in 500ms;
+  border-width: 1px;
+  border-color: black;
+  position: relative;
+  left:12rem;
+  bottom:3rem;
+  background-image:url("https://img.icons8.com/ios-filled/50/191919/pause--v1.png");
+  background-position: center;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  outline: none !important;
+  
+ 
+  
+}
+
+.playButton:hover {
+  width:4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border-width: 1px;
+  background-color: #00d2ff;
+  transition: ease-in 500ms;
+  
+ 
+
+ 
+
+}
+
+
 .albumStyle{
   margin:1rem 4rem;
   width: 10rem;
@@ -64,6 +120,22 @@ box-shadow: 0px 2px 10px black;
 
 }
 
+
+.portraitStyle{
+  width: 14rem;
+  height: 14rem;
+  border: 16px solid black;
+  border-radius:7rem;
+  transition: ease-in 500ms;
+}
+
+.portraitStyle:hover{
+  width: 14rem;
+  height: 14rem;
+  border: 16px solid #00d2ff;
+  border-radius:7rem;
+  transition: ease-in 500ms;
+}
 
 .media-card:hover {
   box-shadow: 0px 2px 10px white;

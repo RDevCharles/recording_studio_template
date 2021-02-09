@@ -4,6 +4,7 @@ add distinguishing color to menu
 GIVE A ONCE OVER!!!!!
 */
 import React, { Fragment } from "react";
+import ReactAudioPlayer from 'react-audio-player';
 import StudioPic from "../assets/images/studio_pic.jpg";
 import Button from "../components/Button";
 import MediaCard from "../components/Media";
@@ -11,11 +12,12 @@ import SectionPic from "../assets/images/section_image.jpg";
 import Rap from "../assets/images/rap-guy.jpg";
 import Cam from "../assets/images/cam-guy.jpg";
 import Drum from "../assets/images/drum-guy.jpg";
-import Sing from "../assets/images/sing-guy.jpg";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
 import AboutCard from "../components/AboutUsInfoCard";
 import Media from "react-media";
+import ArtistPortrait from "../components/ArtistPortait";
+
 
 const Home = props => {
   return (
@@ -48,7 +50,7 @@ const Home = props => {
       >
         <Services  />
       </div>
-      <div
+      {/* <div
         style={{
           display: "flex",
           flexDirection: "column"
@@ -68,6 +70,33 @@ const Home = props => {
         <div id="discog" style={styles.prevDiv}>
           <MediaCard image={Sing} />
         </div>
+      </div> */}
+      <h1 id="discog" style={{
+        position: 'relative',
+      top:'5rem', color:'#cfcfcf'}}>Previous Work</h1>
+      <div style={{
+        display:'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap', 
+        justifyContent: 'center',
+        backgroundColor: '#191919',
+        paddingTop:'4rem'
+      }}>
+     
+ 
+        <ArtistPortrait
+        portraitImage = {Drum}
+        />
+           <ArtistPortrait
+        portraitImage = {Drum}
+        />
+           <ArtistPortrait
+        portraitImage = {Drum}
+        />
+           <ArtistPortrait
+        portraitImage = {Drum}
+        />
+        
       </div>
       <div id="about"
         style={{
